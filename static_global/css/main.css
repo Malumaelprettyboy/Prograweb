@@ -1,0 +1,512 @@
+
+.app-layout{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.app-main{
+flex: 1 0 auto;
+}
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app-main {
+    flex: 1 0 auto;
+}
+
+.galeria-img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer-content {
+    padding: 2rem 1rem;
+}
+.galeria-img {
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.fittrack-page {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.fittrack-hero {
+    background: var(--hero-bg);
+    color: var(--hero-text);
+    padding: 5rem 0 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.fittrack-hero .row.valign-wrapper {
+    flex-wrap: wrap;
+}
+
+.fittrack-hero-copy {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.fittrack-eyebrow {
+    color: var(--hero-accent);
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.75rem;
+}
+
+.fittrack-hero h1 {
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.08;
+    margin: 0 0 1.25rem;
+    max-width: 12ch;
+}
+
+.fittrack-hero-copy p {
+    color: var(--hero-muted);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 34rem;
+}
+
+.fittrack-button {
+    background: #43a047;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.fittrack-button:hover,
+.fittrack-button:focus {
+    background: #388e3c;
+}
+
+.fittrack-hero-image {
+    border: 1px solid var(--hero-border);
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.fittrack-hero-image img {
+    display: block;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.fittrack-highlights {
+    border-top: 1px solid var(--hero-border);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+}
+
+.fittrack-highlights > div {
+    align-items: center;
+    color: var(--hero-muted);
+    display: flex;
+    gap: 0.75rem;
+}
+
+.fittrack-highlight-number {
+    color: var(--hero-accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.fittrack-features {
+    background: var(--bg);
+    padding: 5rem 0 4rem;
+}
+
+.fittrack-section-heading {
+    margin: 0 auto 2.5rem;
+    max-width: 42rem;
+    text-align: center;
+}
+
+.fittrack-section-heading .fittrack-eyebrow {
+    color: var(--accent);
+}
+
+.fittrack-section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+}
+
+.fittrack-section-heading p {
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.fittrack-feature-card {
+    border-radius: 0.85rem;
+    height: calc(100% - 1rem);
+    margin: 0 0 1rem;
+    overflow: hidden;
+}
+
+.fittrack-feature-card .card-image img {
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.fittrack-feature-card .card-content {
+    padding: 1.5rem;
+}
+
+.fittrack-feature-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.fittrack-feature-card .card-content p {
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+@media (max-width: 600px) {
+    .fittrack-hero {
+        padding-top: 3rem;
+    }
+
+    .fittrack-hero-image img {
+        height: 260px;
+    }
+
+    .fittrack-highlights {
+        gap: 0.8rem;
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+
+    .fittrack-features {
+        padding: 3.5rem 0 2.5rem;
+    }
+}
+
+.login-page {
+    align-items: center;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    min-height: 680px;
+    padding: 3rem 1.5rem;
+}
+
+.auth-card {
+    background: var(--surface);
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(22, 39, 28, 0.14);
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    max-width: 1000px;
+    min-height: 540px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.auth-image {
+    background: var(--hero-bg);
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.auth-image::after {
+    background: linear-gradient(180deg, transparent 35%, rgba(8, 15, 11, 0.78) 100%);
+    content: "";
+    inset: 0;
+    position: absolute;
+}
+
+.auth-image img {
+    height: 100%;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    width: 100%;
+}
+
+.auth-image-maluma img {
+    object-position: center 38%;
+}
+
+.auth-image-armando img {
+    object-position: center 32%;
+}
+
+.auth-image-caption {
+    bottom: 2rem;
+    color: #fff;
+    left: 2rem;
+    position: absolute;
+    right: 2rem;
+    z-index: 1;
+}
+
+.auth-image-caption span,
+.auth-eyebrow {
+    color: #388e3c;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.auth-image-caption span {
+    color: #a5d6a7;
+}
+
+.auth-image-caption p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0.5rem 0 0;
+    max-width: 16ch;
+}
+
+.auth-content {
+    align-self: center;
+    padding: 3.5rem clamp(2rem, 5vw, 4.5rem);
+}
+
+.login-panel h1 {
+    color: var(--text);
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+.login-panel > p {
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 2rem;
+}
+
+.login-panel form {
+    margin-top: 1.5rem;
+}
+
+.login-panel .input-field {
+    margin-bottom: 1.5rem;
+}
+
+.login-panel .input-field input:focus {
+    border-bottom-color: #43a047 !important;
+    box-shadow: 0 1px 0 0 #43a047 !important;
+}
+
+.login-panel .input-field input:focus + label {
+    color: #388e3c !important;
+}
+
+.auth-submit {
+    background: #388e3c;
+    border-radius: 5px;
+    box-shadow: none;
+    font-weight: 700;
+    height: 46px;
+    text-transform: none;
+    width: 100%;
+}
+
+.auth-submit:hover,
+.auth-submit:focus {
+    background: #2e7d32;
+    box-shadow: none;
+}
+
+.auth-switch {
+    color: var(--muted);
+    margin: 1.5rem 0 0;
+    text-align: center;
+}
+
+.auth-switch a {
+    color: #2e7d32;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .login-page {
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .auth-card {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+
+    .auth-image {
+        min-height: 230px;
+    }
+
+    .auth-content {
+        padding: 2.5rem 1.75rem;
+    }
+
+    .auth-image-caption {
+        bottom: 1.25rem;
+        left: 1.5rem;
+    }
+
+    .auth-image-caption p {
+        font-size: 1.5rem;
+    }
+}
+
+:root {
+    color-scheme: light;
+    --bg: #fafafa;
+    --text: #212121;
+    --surface: #ffffff;
+    --muted: #5d6a61;
+    --border: #d7ded9;
+    --hero-bg: #e8f5e9;
+    --hero-text: #17211b;
+    --hero-muted: #405548;
+    --hero-accent: #2e7d32;
+    --hero-border: rgba(23, 33, 27, 0.18);
+    --accent: #2e7d32;
+    --nav-bg: #2e7d32;
+    --footer-bg: #2e7d32;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121212;
+    --text: #e0e0e0;
+    --surface: #1e1e1e;
+    --muted: #b0b9b3;
+    --border: #424a45;
+    --hero-bg: #0b100d;
+    --hero-text: #f1f5f2;
+    --hero-muted: #bdc8c1;
+    --hero-accent: #81c784;
+    --hero-border: rgba(255, 255, 255, 0.16);
+    --accent: #81c784;
+    --nav-bg: #1b5e20;
+    --footer-bg: #1b5e20;
+}
+
+html, body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.site-nav,
+.site-footer {
+    background-color: var(--nav-bg);
+    transition: background-color 0.3s;
+}
+
+.site-footer {
+    background-color: var(--footer-bg);
+}
+
+.card,
+.sidenav,
+.auth-card {
+    background-color: var(--surface);
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidenav li > a,
+.card .card-title,
+.fittrack-section-heading h2,
+.fittrack-feature-card .card-content {
+    color: var(--text);
+}
+
+.fittrack-feature-card,
+.fittrack-feature-card .card-content {
+    background-color: var(--surface);
+}
+
+.login-panel .input-field input,
+.login-panel .input-field input:focus {
+    border-bottom-color: var(--border);
+    color: var(--text);
+    box-shadow: 0 1px 0 0 var(--border);
+}
+
+.login-panel .input-field label {
+    color: var(--muted);
+}
+
+.login-panel .input-field input:focus {
+    border-bottom-color: #43a047;
+    box-shadow: 0 1px 0 0 #43a047;
+}
+
+.theme-toggle-label {
+    margin-left: 0.5rem;
+}
+
+[data-theme="dark"] .auth-card {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] body .app-main,
+[data-theme="dark"] body .fittrack-page,
+[data-theme="dark"] body .fittrack-features,
+[data-theme="dark"] body .login-page {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] body .auth-card,
+[data-theme="dark"] body .fittrack-feature-card,
+[data-theme="dark"] body .fittrack-feature-card .card-content {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] body .auth-content h1,
+[data-theme="dark"] body .fittrack-section-heading h2,
+[data-theme="dark"] body .fittrack-feature-card .card-title,
+[data-theme="dark"] body .fittrack-feature-card .card-content p {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] body .auth-content p,
+[data-theme="dark"] body .auth-content .input-field label,
+[data-theme="dark"] body .auth-content .input-field input {
+    color: #b0b9b3;
+}
+
+[data-theme="dark"] body .auth-content .input-field input {
+    border-bottom-color: #424a45;
+    box-shadow: 0 1px 0 0 #424a45;
+}
+
+[data-theme="dark"] body .auth-content .input-field input:focus {
+    border-bottom-color: #81c784;
+    box-shadow: 0 1px 0 0 #81c784;
+}
+
+[data-theme="dark"] .white-text {
+    color: var(--hero-text) !important;
+}
