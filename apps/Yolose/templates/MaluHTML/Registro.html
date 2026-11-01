@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}FitTrack | REGISTRO{% endblock %}
+{% block content %}
+<section class="login-page">
+    <div class="auth-card">
+        <div class="auth-image auth-image-armando">
+            <img src="{% static 'css/img/Armando.jpg' %}" alt="Armando con traje y gafas">
+            <div class="auth-image-caption">
+                <span>FITTRACK</span>
+                <p>Construye una versión más fuerte de ti.</p>
+            </div>
+        </div>
+        <div class="auth-content">
+            <div class="login-panel">
+                <span class="auth-eyebrow">EMPIEZA TU CAMBIO</span>
+                <h1>Crear cuenta</h1>
+                <p>Únete a Fittrack y comienza a registrar tus avances.</p>
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="register-name" name="name" autocomplete="name" required>
+                        <label for="register-name">Nombre</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="register-email" name="email" autocomplete="email" required>
+                        <label for="register-email">Correo Electrónico</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="register-password" name="password" autocomplete="new-password" required>
+                        <label for="register-password">Contraseña</label>
+                    </div>
+                    <button type="submit" class="btn waves-effect waves-light auth-submit">Registrarme</button>
+                </form>
+            </div>
+            <p class="auth-switch">¿Ya tienes cuenta? <a href="{% url 'login' %}">Inicia sesión</a></p>
+        </div>
+    </div>
+</section>
+{% endblock %}

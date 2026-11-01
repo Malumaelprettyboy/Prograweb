@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header %}
+{% include 'components/navbar.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="fittrack-page">
+    <section class="fittrack-hero">
+        <div class="container">
+            <div class="row valign-wrapper">
+                <div class="col s12 m6 fittrack-hero-copy">
+                    <span class="fittrack-eyebrow">ENTRENA · MIDE · AVANZA</span>
+                    <h1>Tu esfuerzo merece ser medido.</h1>
+                    <p>Registra tus entrenamientos, observa tu progreso y mantén la motivación para alcanzar tus metas.</p>
+                    <a href="#beneficios" class="btn-large waves-effect waves-light fittrack-button">Descubre Fittrack</a>
+                </div>
+                <div class="col s12 m6">
+                    <div class="fittrack-hero-image">
+                        <img src="{% static 'css/img/gym.jpg' %}" alt="Discos de peso en un gimnasio">
+                    </div>
+                </div>
+            </div>
+            <div class="fittrack-highlights">
+                <div>
+                    <span class="fittrack-highlight-number">01</span>
+                    <span>Registra cada entrenamiento</span>
+                </div>
+                <div>
+                    <span class="fittrack-highlight-number">02</span>
+                    <span>Visualiza tus avances</span>
+                </div>
+                <div>
+                    <span class="fittrack-highlight-number">03</span>
+                    <span>Mantén el ritmo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section fittrack-features" id="beneficios">
+        <div class="container">
+            <div class="fittrack-section-heading">
+                <span class="fittrack-eyebrow">TU PROGRESO, A TU MANERA</span>
+                <h2>Haz que cada sesión cuente</h2>
+                <p>Fittrack te ayuda a convertir la constancia en resultados, un entrenamiento a la vez.</p>
+            </div>
+
+            <div class="row">
+                <div class="col s12 m4">
+                    <article class="card fittrack-feature-card">
+                        <div class="card-image">
+                            <img src="{% static 'css/img/gym.jpg' %}" alt="Discos listos para un entrenamiento de fuerza">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Entrena con intención</span>
+                            <p>Registra tus ejercicios, pesos y repeticiones para tener cada sesión bajo control.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col s12 m4">
+                    <article class="card fittrack-feature-card">
+                        <div class="card-image">
+                            <img src="{% static 'css/img/fits.jpg' %}" alt="Detalle de un torso atlético">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Mira tu progreso</span>
+                            <p>Haz seguimiento a tus avances y reconoce todo el trabajo que ya has hecho.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col s12 m4">
+                    <article class="card fittrack-feature-card">
+                        <div class="card-image">
+                            <img src="{% static 'css/img/hulkeate.jpg' %}" alt="Figura de Hulk como símbolo de fuerza y motivación">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Sigue motivado</span>
+                            <p>Ponte metas alcanzables, celebra cada avance y vuelve con ganas a tu próximo entrenamiento.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

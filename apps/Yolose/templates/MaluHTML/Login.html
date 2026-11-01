@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}FitTrack | INICIAR SESION{% endblock %}
+{% block content %}
+<section class="login-page">
+    <div class="auth-card">
+        <div class="auth-image auth-image-maluma">
+            <img src="{% static 'css/img/images.jpg' %}" alt="Maluma con traje negro">
+            <div class="auth-image-caption">
+                <span>FITTRACK</span>
+                <p>Tu siguiente meta empieza hoy.</p>
+            </div>
+        </div>
+        <div class="auth-content">
+            <div class="login-panel">
+                <span class="auth-eyebrow">QUÉ BUENO TENERTE DE VUELTA</span>
+                <h1>Iniciar sesión</h1>
+                <p>Ingresa tus datos y continúa con tu progreso.</p>
+                <form>
+                    <div class="input-field">
+                        <input type="email" id="Login-email" name="email" autocomplete="email" required>
+                        <label for="Login-email">Correo Electrónico</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="Login-password" name="password" autocomplete="current-password" required>
+                        <label for="Login-password">Contraseña</label>
+                    </div>
+                    <button type="submit" class="btn waves-effect waves-light auth-submit">Iniciar Sesión</button>
+                </form>
+            </div>
+            <p class="auth-switch">¿No tienes cuenta? <a href="{% url 'registro' %}">Regístrate aquí</a></p>
+        </div>
+    </div>
+</section>
+{% endblock %}
