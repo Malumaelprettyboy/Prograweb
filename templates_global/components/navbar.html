@@ -1,0 +1,25 @@
+
+<nav class="site-nav">
+    <div class="nav-wrapper container">
+        <a href="/" class="brand-logo">Fittrack</a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger" aria-label="Abrir menú">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="theme-toggle" aria-label="Cambiar tema"><i class="material-icons theme-icon">dark_mode</i><span class="theme-toggle-label">Cambiar tema</span></a></li>
+            <li><a href="/about">Informacion</a></li>
+            <li><a href="/services">Joseadores</a></li>
+            <li><a href="/contact">Contactos</a></li>
+            <li><a href="{% url 'login' %}">INICIAR SESION</a></li>
+            
+        </ul>
+    </div>
+
+</nav>
+<ul class="sidenav" id="mobile-nav">
+    <li><a href="#" class="theme-toggle" aria-label="Cambiar tema"><i class="material-icons theme-icon">dark_mode</i><span class="theme-toggle-label">Cambiar tema</span></a></li>
+    <li><a href="/about">Informacion</a></li>
+    <li><a href="/services">Joseadores</a></li>
+    <li><a href="/contact">Contactos</a></li>
+     <li><a href="{% url 'login' %}">INICIAR SESION</a></li>
+</ul>
